@@ -14,13 +14,13 @@ The syntax for a function is
 For example, a function to return the sum of four parameters can be written as
 
 	int sum_of_four(int a, int b, int c, int d) {
-    		int sum = 0;
-    			sum += a;
-    			sum += b;
-    			sum += c;
-  			sum += d;
-    			return sum;
-	  	}
+    	int sum = 0;
+    	sum += a;
+    	sum += b;
+    	sum += c;
+  	sum += d;
+    	return sum;
+	  }
 Write a function int max_of_four(int a, int b, int c, int d) which returns the maximum of the four arguments it receives.
 
 	+= : Add and assignment operator. It adds the right operand to the left operand and assigns the result to the left operand.
