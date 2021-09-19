@@ -19,7 +19,7 @@ You will be given an array of **N** integers and you have to print the integers 
 The first line of the input contains **N**,where **N** is the number of integers.The next line contains **N** space-separated integers.
 
 #### Constraints
-**1<=N<=1000
+**1<=N<=1000<br />
 1<=A[i]<=1000**,where **A[i]** is the **ith** integer in the array.
 
 #### Output Format
