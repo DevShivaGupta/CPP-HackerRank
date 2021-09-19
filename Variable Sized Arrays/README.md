@@ -37,8 +37,8 @@ For each pair of **i** and **j** values (i.e., for each query), print a single i
 	9
 #### Explanation
 
-The diagram below depicts our assembled Sample Input:<br />
-![alt text](https://s3.amazonaws.com/hr-challenge-images/14507/1476906485-2c93045320-variable-length-arrays.png)<br /><br /><br /><br />
+The diagram below depicts our assembled Sample Input:<br /><br />
+![alt text](https://s3.amazonaws.com/hr-challenge-images/14507/1476906485-2c93045320-variable-length-arrays.png
 	
 We perform the following **q=2** queries:<br />
 
