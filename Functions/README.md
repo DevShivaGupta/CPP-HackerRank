@@ -18,7 +18,7 @@ For example, a function to return the sum of four parameters can be written as
     	    sum += a;
     	    sum += b;
     	    sum += c;
-  	    sum += d;
+  	     sum += d;
     	    return sum;
 	  }
 Write a function int max_of_four(int a, int b, int c, int d) which returns the maximum of the four arguments it receives.
