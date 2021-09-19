@@ -11,9 +11,9 @@ The syntax is
 * expression_3 is generally used to update the flags/variables.
 A sample loop is
 
-	for(int i = 0; i < 10; i++) {
-    	...
-	}
+		for(int i = 0; i < 10; i++) {
+    		...
+		}
 In this challenge, you will use a for loop to increment a variable through a range.
 
 #### Input Format
