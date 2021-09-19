@@ -40,6 +40,8 @@ For each pair of **i** and **j** values (i.e., for each query), print a single i
 
 The diagram below depicts our assembled Sample Input:
 ![alt text](https://s3.amazonaws.com/hr-challenge-images/14507/1476906485-2c93045320-variable-length-arrays.png)
+	
+	
 We perform the following **q=2** queries:<br />
 
 1. Find the array located at index **i=0**, which corresponds to **a[0]=[1,5,4]**. We must print the value at index **j=1** of this array which, as you can see, is **5**.
