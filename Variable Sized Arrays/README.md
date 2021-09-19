@@ -27,7 +27,7 @@ For each pair of **i** and **j** values (i.e., for each query), print a single i
 
 #### Sample Input
 
-		2 2
+	        2 2
 		3 1 5 4
 		5 1 2 8 9 3
 		0 1
