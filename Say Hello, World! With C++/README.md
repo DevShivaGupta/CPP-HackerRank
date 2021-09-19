@@ -5,6 +5,7 @@ We're starting out by printing the most famous computing phrase of all time! In 
 The more popular command form is cout. It has the following basic form: <br />
 
 cout<<value_to_print<<value_to_print; <br />
+
 Any number of values can be printed using one command as shown.<br />
 The printf command comes from C language. It accepts an optional format specification and a list of variables. Two examples for printing a string are: <br />
 
