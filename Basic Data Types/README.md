@@ -48,8 +48,8 @@ Sample Output
 	14049.304930000
 #### Explanation
 
-Print int **3**,
-followed by long **12345678912345**,
-followed by char **a**,
-followed by float **334.23**,
-followed by double **14049.30493**.
+Print int **3**,</br>
+followed by long **12345678912345**,</br>
+followed by char **a**,</br>
+followed by float **334.23**,</br>
+followed by double **14049.30493**.</br>
