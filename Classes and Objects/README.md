@@ -17,11 +17,12 @@ Most of the input is handled for you by the locked code in the editor.
 In the void Student::input() function, you must read  scores from stdin and save them to your  instance variable.
 
 #### Constraints
-
+** 1 <= n <= 100 **
+** 0 <= examscore <= 50 **
 
 #### Output Format
 
-In the int Student::calculateTotalScore() function, you must return the student's total grade (the sum of the values in ).
+In the int Student::calculateTotalScore() function, you must return the student's total grade (the sum of the values in **scores**).
 
 The locked code in the editor will determine how many scores are larger than Kristen's and print that number to the console.
 
