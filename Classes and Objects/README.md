@@ -1,37 +1,41 @@
-## Input and Output
-### Objective
-In this challenge, we practice reading input from stdin and printing output to stdout.
+## Classes and Objects
+A class defines a blueprint for an object. We use the same syntax to declare objects of a class as we use to declare variables of other basic types. For example:
 
-In C++, you can read a single whitespace-separated token of input using cin, and print output to stdout using cout. For example, let's say we declare the following variables:
+    Box box1;          // Declares variable box1 of type Box
+    Box box2;          // Declare variable box2 of type Box
+Kristen is a contender for valedictorian of her high school. She wants to know how many students (if any) have scored higher than her in the **5** exams given during this semester.
 
-    string s;
-    int n;
-and we want to use cin to read the input "High 5" from stdin. We can do this with the following code:
-    
-    cin >> s >> n;
-This reads the first word ("High") from stdin and saves it as string **s**, then reads the second word ("**5**") from stdin and saves it as integer **n**. If we want to print these values to stdout, separated by a space, we write the following code:
+Create a class named  **Student** with the following specifications:
 
-    cout << s << " " << n << endl;
-This code prints the contents of string **s**, a single space (**"** **"**), then the integer **n**. We end our line of output with a newline using endl. This results in the following output:
-    
-    High 5
-#### Task
-Read **3** numbers from stdin and print their sum to stdout.
-
+* An instance variable named **scores** to hold a student's **5** exam scores.
+* A void input() function that reads **5** integers and saves them to **scores**.
+* An int calculateTotalScore() function that returns the sum of the student's scores.
 #### Input Format
-One line that contains **3** space-separated integers: **a**,**b**, and **c**.
+
+Most of the input is handled for you by the locked code in the editor.
+
+In the void Student::input() function, you must read  scores from stdin and save them to your  instance variable.
 
 #### Constraints
-* **1<=a,b,c<=1000**
+
 
 #### Output Format
-Print the sum of the three numbers on a single line.
 
-**Sample Input**
-    
-    1 2 7
-**Sample Output**
+In the int Student::calculateTotalScore() function, you must return the student's total grade (the sum of the values in ).
 
-    10
+The locked code in the editor will determine how many scores are larger than Kristen's and print that number to the console.
+
+#### Sample Input
+
+The first line contains **n**, the number of students in Kristen's class. The **n** subsequent lines contain each student's **5** exam grades for this semester.
+
+    3
+    30 40 45 10 10
+    40 40 40 10 10
+    50 20 30 10 10
+#### Sample Output
+
+    1
 #### Explanation
-The sum of the three numbers is **1+2+7=10.**
+
+Kristen's grades are on the first line of grades. Only **1** student scored higher than her.
