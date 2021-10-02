@@ -1,37 +1,35 @@
-## Input and Output
-### Objective
-In this challenge, we practice reading input from stdin and printing output to stdout.
+## Rectangle
+In this challenge, you are required to compute the area of a rectangle using classes.
+<br/>
+Create two classes:
 
-In C++, you can read a single whitespace-separated token of input using cin, and print output to stdout using cout. For example, let's say we declare the following variables:
+#### Rectangle
 
-    string s;
-    int n;
-and we want to use cin to read the input "High 5" from stdin. We can do this with the following code:
-    
-    cin >> s >> n;
-This reads the first word ("High") from stdin and saves it as string **s**, then reads the second word ("**5**") from stdin and saves it as integer **n**. If we want to print these values to stdout, separated by a space, we write the following code:
+The Rectangle class should have two data fields-width and height of int types. The class should have display() method, to print the width and height of the rectangle separated by space.
 
-    cout << s << " " << n << endl;
-This code prints the contents of string **s**, a single space (**"** **"**), then the integer **n**. We end our line of output with a newline using endl. This results in the following output:
-    
-    High 5
-#### Task
-Read **3** numbers from stdin and print their sum to stdout.
+#### RectangleArea
+
+The RectangleArea class is derived from Rectangle class, i.e., it is the sub-class of Rectangle class. The class should have read_input() method, to read the values of width and height of the rectangle. The RectangleArea class should also overload the display() method to print the area **(width x height)** of the rectangle.
 
 #### Input Format
-One line that contains **3** space-separated integers: **a**,**b**, and **c**.
+
+The first and only line of input contains two space separated integers denoting the width and height of the rectangle.
 
 #### Constraints
-* **1<=a,b,c<=1000**
-
+* 1 <=width,height <=100
 #### Output Format
-Print the sum of the three numbers on a single line.
 
-**Sample Input**
-    
-    1 2 7
-**Sample Output**
+The output should consist of exactly two lines:
+In the first line, print the width and height of the rectangle separated by space.
+In the second line, print the area of the rectangle.
 
-    10
+#### Sample Input
+
+    10 5
+#### Sample Output
+
+    10 5
+    50
 #### Explanation
-The sum of the three numbers is **1+2+7=10.**
+
+As,**width = 10** and **height=5**,so **area = width X height = 50** 
