@@ -1,37 +1,69 @@
-## Input and Output
-### Objective
-In this challenge, we practice reading input from stdin and printing output to stdout.
+## Class
+Classes in C++ are user defined types declared with keyword class that has data and functions . Although classes and structures have the same type of functionality, there are some basic differences. The data members of a class are private by default and the members of a structure are public by default. Along with storing multiple data in a common block, it also assigns some functions (known as methods) to manipulate/access them. It serves as the building block of Object Oriented Programming.
+It also has access specifiers, which restrict the access of member elements. The primarily used ones are the following:
+* public: Public members (variables, methods) can be accessed from anywhere the code is visible.
+* private: Private members can be accessed only by other member functions, and it can not be accessed outside of class.
+Class can be represented in the form of
 
-In C++, you can read a single whitespace-separated token of input using cin, and print output to stdout using cout. For example, let's say we declare the following variables:
+class ClassName {
+   
+    access_specifier1:
+        type1 val1;
+        type2 val2;
+        ret_type1 method1(type_arg1 arg1, type_arg2 arg2,...)
+        ...
+    access_specifier2:
+        type3 val3;
+        type4 val4;
+        ret_type2 method2(type_arg3 arg3, type_arg4 arg4,...)
+        ...
+    };
+It's a common practice to make all variables private, and set/get them using public methods. For example:
 
-    string s;
-    int n;
-and we want to use cin to read the input "High 5" from stdin. We can do this with the following code:
-    
-    cin >> s >> n;
-This reads the first word ("High") from stdin and saves it as string **s**, then reads the second word ("**5**") from stdin and saves it as integer **n**. If we want to print these values to stdout, separated by a space, we write the following code:
+    class SampleClass {
+        private:
+            int val;
+    public:
+        void set(int a) {
+            val = a;
+        }
+        int get() {
+            return val;
+        }
+    };
+We can store details related to a student in a class consisting of his age (int), first_name (string), last_name (string) and standard (int).
 
-    cout << s << " " << n << endl;
-This code prints the contents of string **s**, a single space (**"** **"**), then the integer **n**. We end our line of output with a newline using endl. This results in the following output:
-    
-    High 5
-#### Task
-Read **3** numbers from stdin and print their sum to stdout.
+You have to create a class, named Student, representing the student's details, as mentioned above, and store the data of a student. Create setter and getter functions for each element; that is, the class should at least have following functions:
+
+* get_age, set_age
+* get_first_name, set_first_name
+* get_last_name, set_last_name
+* get_standard, set_standard
+Also, you have to create another method to_string() which returns the string consisting of the above elements, separated by a comma(,). You can refer to stringstream for this.
 
 #### Input Format
-One line that contains **3** space-separated integers: **a**,**b**, and **c**.
 
-#### Constraints
-* **1<=a,b,c<=1000**
+Input will consist of four lines.<br/>
+The first line will contain an integer, representing the age. The second line will contain a string, consisting of lower-case Latin characters ('a'-'z'), representing the first_name of a student.<br/>
+The third line will contain another string, consisting of lower-case Latin characters ('a'-'z'), representing the last_name of a student.</br>
+The fourth line will contain an integer, representing the standard of student.</br>
+
+Note: The number of characters in first_name and last_name will not exceed 50.
 
 #### Output Format
-Print the sum of the three numbers on a single line.
 
-**Sample Input**
-    
-    1 2 7
-**Sample Output**
+The code provided by HackerRank will use your class members to set and then get the elements of the Student class.
 
+#### Sample Input
+
+    15
+    john
+    carmack
     10
-#### Explanation
-The sum of the three numbers is **1+2+7=10.**
+#### Sample Output
+
+    15
+    carmack, john
+    10
+
+    15,john,carmack,10
